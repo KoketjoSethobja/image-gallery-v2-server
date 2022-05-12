@@ -1,3 +1,3 @@
-# IMAGE GALLERY V2 SERVER 
+# SERVER SIDE FOR IMAGE-GALLERY-V2 REPOSITORY
 
-* This is the server side of image-gallery-v2 repository
+* created a separate repository for hosting purposes https://github.com/KoketjoSethobja/image-gallery-v2
