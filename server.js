@@ -81,7 +81,7 @@ app.post('/login', (req, response) => {
                     req.session.regenerate(() => {
                         app.set('id', found[0].idUsers); 
                         req.session.user = found[0].username; 
-                        console.log('password matches user logged in') 
+                        // console.log('password matches user logged in') 
                         // console.log(req.session.user) 
                         // console.log(res)                                              
                         // console.log(found[0].idUsers)
