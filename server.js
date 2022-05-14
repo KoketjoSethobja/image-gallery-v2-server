@@ -88,7 +88,7 @@ app.post('/login', (req, response) => {
                         response.send(found)
                     })
                 } else {
-                    console.log('password do not match' + err)
+                    console.log('password do not match')
                 }
             })
         } else {
@@ -96,39 +96,6 @@ app.post('/login', (req, response) => {
         }
     })
 })
-
-// app.post('/login', (req, res) => {
-//     const username = req.body.username;
-//     const password = req.body.password;
-//     var sql = 'SELECT * FROM public.Users WHERE username = ?';
-//     db.query(sql, username, (err, result) => {
-//         if(err){
-//             // res.send({err: err})
-//             //res.send({message: err})
-//             console.log(err)
-//         }
-//         if(result.length > 0) {            
-//             bcrypt.compare(password, result[0].password, (error, response) => {
-//                 if(response){
-//                     // app.set('id', result[0].idUsers)
-//                     // res.send({message: result})
-//                     app.set('id', result[0].idUsers); 
-//                     req.session.user = result[0].username;                    
-//                     console.log(req.session.user)
-//                     console.log(response)
-//                     res.send(result)
-//                 } else {
-//                     // res.send({message: error})
-//                     console.log(error)
-//                     // res.send({message: 'Wrong username or password'})
-//                 }
-//             })
-//         } else {
-//             console.log('failed')
-//             // res.send({message: 'User does not exist'})
-//         }
-//     })
-// })
 
 app.post('/upload', (req, res) => {
     const data = {
