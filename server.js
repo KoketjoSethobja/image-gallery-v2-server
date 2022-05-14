@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors({
-    origin: ['https://koketjocomgallery.netlify.app', 'https://koketjocomgallery.herokuapp.com', 'https://api.cloudinary.com/v1_1/koketjosethobja/image/upload', '*'],
+    origin: ['https://koketjocomgallery.netlify.app', 'https://api.cloudinary.com/v1_1/koketjosethobja/image/upload'],
     method: ['GET', 'POST', 'DELETE', 'PUT'],
     credentials: true,
 }));
